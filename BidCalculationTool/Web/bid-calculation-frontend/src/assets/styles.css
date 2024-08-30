@@ -1,0 +1,119 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: rgb(0, 98, 156);
+    --secondary-color: rgb(0, 175, 217);
+    --background-color: #f0f3f6;
+    --text-color: #333;
+}
+
+#app {
+    max-width: 764px;
+    margin: 60px auto;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    header h1 {
+        margin: 0;
+    }
+
+button {
+    background-color: var(--primary-color);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .2s;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+    button:hover {
+        background-color: var(--secondary-color);
+    }
+
+form {
+    margin: 20px 0;
+}
+
+    form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    form input, form select, form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+        form input[type="submit"] {
+            background-color: var(--primary-color);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+            form input[type="submit"]:hover {
+                background-color: darken(var(--primary-color), 10%);
+            }
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+    .card h2 {
+        margin-top: 0;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
